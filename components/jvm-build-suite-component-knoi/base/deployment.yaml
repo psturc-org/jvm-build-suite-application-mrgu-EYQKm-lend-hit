@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-knoi
     spec:
       containers:
-      - image: quay.io/psturc/test-images:15b3b33102ff453f9ef1cdced0720df8
+      - image: quay.io/psturc/test-images@sha256:0b780fd9b7bfed9b035b37ed03d3f421650ec8a38e89185f6182ac3528253b8f
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
