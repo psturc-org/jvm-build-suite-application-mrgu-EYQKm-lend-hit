@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-knoi
+  namespace: jvm-build-dxag-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/psturc/test-images@sha256:0b780fd9b7bfed9b035b37ed03d3f421650ec8a38e89185f6182ac3528253b8f
+        name: container-image
+        resources: {}
+status: {}
